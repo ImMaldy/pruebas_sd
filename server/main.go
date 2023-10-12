@@ -29,7 +29,7 @@ func (s *server) List(context.Context, *pb.ListWishListReq) (*pb.ListWishListRes
 }
 
 func main() {
-	listner, err := net.Listen("tcp", ":50051")
+	listner, err := net.Listen("tcp", "10.6.46.102:50051")
 
 	if err != nil {
 		panic("cannot create tcp connection" + err.Error())
